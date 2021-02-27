@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.gildedrose.GildedRoseTest" tests="15" skipped="0" failures="0" errors="0" timestamp="2021-02-27T03:41:04" hostname="DESKTOP-A8AAEAI" time="0.043">
+  <properties/>
+  <testcase name="UpdateQuality_WillNotIncreaseQualityValueBeyondFifty_WhenTheItemIsBackstagePasses()" classname="com.gildedrose.GildedRoseTest" time="0.018"/>
+  <testcase name="UpdateQuality_WillDecreaseSellInValueByOne_WhenCalledOneTime()" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
+  <testcase name="UpdateQuality_WillNotChangeQualityOrSellInValues_WhenTheItemIsSulfuras()" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
+  <testcase name="UpdateQuality_WillIncreaseQualityValueByTwo_WhenItemIsAgedBrieAndSellInIsLessThanZeroAndQualityLessThanFifty()" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
+  <testcase name="UpdateQuality_WillChangeQualityValueProperly_WhenMultipleItemsAreSpecified()" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
+  <testcase name="UpdateQuality_WillNotDecreaseQualityValue_WhenTheQualityIsZero()" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
+  <testcase name="UpdateQuality_WillIncreaseQualityValueByOne_WhenTheItemIsAgedBrie()" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
+  <testcase name="UpdateQuality_WillNotIncreaseQualityValueBeyondFifty_WhenTheItemIsAgedBrie()" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
+  <testcase name="UpdateQuality_WillIncreaseQualityValueByTwo_WhenTheItemIsBackstagePassesAndSellInValueIsBetweenTenAndFiveDays()" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
+  <testcase name="UpdateQuality_WillDecreaseQualityValueByOne_WhenCalledOneTime()" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
+  <testcase name="UpdateQuality_WillDecreaseTheQualityValueByTwo_WhenTheSellInValueIsLessThanZero()" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
+  <testcase name="UpdateQuality_WillIncreaseQualityValueByOne_WhenTheItemIsBackstagePassesAndSellInValueIsMoreThanTenDays()" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
+  <testcase name="UpdateQuality_WillIncreaseQualityValueByThree_WhenTheItemIsBackstagePassesAndSellInValueIsLessThanFiveDays()" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
+  <testcase name="ToString_WillDisplayItemInformation_WhenCalled()" classname="com.gildedrose.GildedRoseTest" time="0.003"/>
+  <testcase name="UpdateQuality_WillSetQualityToZero_WhenTheItemIsBackstagePassesAndSellInValueIsLessThanZeroDays()" classname="com.gildedrose.GildedRoseTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
