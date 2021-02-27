@@ -3,4 +3,5 @@ This repo represents the solution for Assignment 2 for SWE 6733. This assignment
 
 # Mob Programming Session 1
 
-## Video of the session - https://web.microsoftstream.com/video/c74fc4a1-ee7f-4718-b140-4866df1b6b3b
+## Video of the session
+https://web.microsoftstream.com/video/c74fc4a1-ee7f-4718-b140-4866df1b6b3b
