@@ -18,3 +18,10 @@ https://web.microsoftstream.com/video/9d49e3c3-def9-41f2-a5c1-fec5f1459e0a
 
 ## Video of the session
 https://web.microsoftstream.com/video/ba8b6f15-8a86-4c84-8c44-7085ec7933ae
+
+# Contributors
+* Jonathan Gamble
+* Shakera Dean
+* Miche Isaac
+* Terrence Shannon
+* Wyatt Landers
