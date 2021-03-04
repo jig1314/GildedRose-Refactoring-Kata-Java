@@ -111,11 +111,11 @@ class GildedRoseTest {
 
     @Test
     void UpdateQuality_WillNotChangeQualityOrSellInValues_WhenTheItemIsSulfuras(){
-        Item[] items = new Item[] { new Item("Sulfuras, Hand of Ragnaros", 0, 100) };
+        Item[] items = new Item[] { new Item("Sulfuras, Hand of Ragnaros", 0, 80) };
         GildedRose app = new GildedRose(items);
         app.updateQuality();
         assertEquals(0, app.items[0].sellIn);
-        assertEquals(100, app.items[0].quality);
+        assertEquals(80, app.items[0].quality);
     }
 
     @Test
@@ -125,7 +125,7 @@ class GildedRoseTest {
                 new Item("Computer", 10, 10),
                 new Item("Cell Phone", 15, 20),
                 new Item("Backstage passes to a TAFKAL80ETC concert", 1, 35),
-                new Item("Sulfuras, Hand of Ragnaros", 0, 100),
+                new Item("Sulfuras, Hand of Ragnaros", 0, 80),
                 new Item("Aged Brie", 10, 40),
                 new Item("Monitor", -1, 10)
         };
@@ -134,9 +134,44 @@ class GildedRoseTest {
         assertEquals(9, app.items[0].quality);
         assertEquals(19, app.items[1].quality);
         assertEquals(38, app.items[2].quality);
-        assertEquals(100, app.items[3].quality);
+        assertEquals(80, app.items[3].quality);
         assertEquals(41, app.items[4].quality);
         assertEquals(8, app.items[5].quality);
     }
 
+    @Test
+    void UpdateQuality_WillDecreaseQualityValueByTwo_WhenTheItemIsConjuredAndSellInValueGreaterThanZero()
+    {
+        Item[] items = new Item[] { new Item("Conjured Food", 10, 10) };
+        GildedRose app = new GildedRose(items);
+        app.updateQuality();
+        assertEquals(8, app.items[0].quality);
+    }
+
+    @Test
+    void UpdateQuality_WillDecreaseQualityValueByFour_WhenTheItemIsConjuredAndSellInValueLessThanZero()
+    {
+        Item[] items = new Item[] { new Item("Conjured Food", -1, 10) };
+        GildedRose app = new GildedRose(items);
+        app.updateQuality();
+        assertEquals(6, app.items[0].quality);
+    }
+
+    @Test
+    void UpdateQuality_WillNotDecreaseQualityValueBelowZero_WhenTheItemIsConjured()
+    {
+        Item[] items = new Item[] { new Item("Conjured Food", -1, 0) };
+        GildedRose app = new GildedRose(items);
+        app.updateQuality();
+        assertEquals(0, app.items[0].quality);
+    }
+
+    @Test
+    void UpdateQuality_WillDecreaseQualityValueByOne_WhenTheItemContainsButDoesNotStartWithConjuredAndSellInValueGreaterThanZero()
+    {
+        Item[] items = new Item[] { new Item("Non-Conjured Food", 10, 10) };
+        GildedRose app = new GildedRose(items);
+        app.updateQuality();
+        assertEquals(9, app.items[0].quality);
+    }
 }
